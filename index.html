@@ -18,11 +18,37 @@ layout: default
 
     <div class="rowDOE">
       <div class="large-12 columnsDOE headline">
-        <center><h2>This is the <span class="green-text">foundation</span> template</h2></center>
+        <center><h2>Burrito <span class="green-text">Calculator</span></h2></center>
       </div>
       <div class="large-12 columnsDOE subheadline">
         <p> This is interesting and <span class="has-tip tip-bottom" data-tooltip title="We define total per capita energy consumption as someone's annual transportation and residential energy needs combined.">important</span> information.</p>
       </div>
     </div>
+    <div class="rowDOE">
+      <div class="large-10 columnsDOE subheadline">
+        <input class="lead" placeholder="Enter a value"></input>
+      </div> 
+      <div class="large-2 columnsDOE dropdown">
+        <div data-dropdown="drop">KJ</div>
+        <ul id="drop" class="small f-dropdown close" data-dropdown-content>
+        </ul> 
+      </div>
+    </div>
+
+    Amount: <input type="text" id="energyamount" placeholder="enter a value">
+    Type: <select id="unit">
+            <option value="joule">joule</option>
+            <option value="megajoule">megajoule</option>
+            <option value="kcal">kilocalorie</option>
+            <option value="btu">British Thermal Unit</option>
+            <option value="therm">Therms</option>
+            <option value="kwh">kilowatt hour</option>
+          </select>
+    <button onclick="clickFunction()">Calculate</button>
+
+  
+  
+
+    
 
 </div>    
