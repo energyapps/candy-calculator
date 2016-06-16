@@ -26,17 +26,13 @@ layout: default
     </div>
     <div class="rowDOE">
       <div class="large-10 columnsDOE subheadline">
-        <input class="lead" placeholder="Enter a value"></input>
+        <input type="text" id="energyamount" class="lead" value='50000000000000' placeholder="Enter a value"></input>
       </div> 
       <div class="large-2 columnsDOE dropdown">
-        <div data-dropdown="drop">KJ</div>
-        <ul id="drop" class="small f-dropdown close" data-dropdown-content>
-        </ul> 
-      </div>
-    </div>
-
-    Amount: <input type="text" id="energyamount" placeholder="enter a value">
-    Type: <select id="unit">
+        <!-- <div data-dropdown="drop">KJ</div> -->
+        <!-- <ul id="drop" class="small f-dropdown close" data-dropdown-content>
+        </ul> --> 
+        Type: <select id="unit">
             <option value="joule">joule</option>
             <option value="megajoule">megajoule</option>
             <option value="kcal">kilocalorie</option>
@@ -44,11 +40,52 @@ layout: default
             <option value="therm">Therms</option>
             <option value="kwh">kilowatt hour</option>
           </select>
-    <button onclick="clickFunction()">Calculate</button>
+              <button onclick="clickFunction()">Calculate</button>
 
-  
-  
-
+      </div>
+    </div>
     
+
+    <div class="rowDOE">
+      <div class="unit-container columnsDOE large-10 small-centered">
+        <div id="burEQ" class="unit-num large-4 columnsDOE">199028</div>
+        <div class="unit-name large-8 columnsDOE"> 
+          <div class="iconD"><img src="img/burrito-icon.png"></div>
+          <div class="nameD">Burritos</div>
+        </div>
+      </div>
+      <div class="unit-container columnsDOE large-10 small-centered">
+        <div id="rushEQ" class="unit-num large-4 columnsDOE">199028</div>
+        <div class="unit-name large-8 columnsDOE"> 
+          <div class="iconD"><img src="img/rushmore-icon.png"></div>
+          <div class="nameD">Rushmores</div>
+        </div>
+      </div>
+      <div class="unit-container columnsDOE large-10 small-centered">
+        <div id="nyEQ" class="unit-num large-4 columnsDOE">199028</div>
+        <div class="unit-name large-8 columnsDOE"> 
+          <div class="iconD"><img src="img/NY-minute-icon.png"></div>
+          <div class="nameD">New York Minutes</div>
+        </div>
+      </div>
+      <div class="unit-container columnsDOE large-10 small-centered">
+        <div id="moonEQ" class="unit-num large-4 columnsDOE">199028</div>
+        <div class="unit-name large-8 columnsDOE"> 
+          <div class="iconD"><img src="img/moon-landing-icon.png"></div>
+          <div class="nameD">Moon Landings</div>
+        </div>
+      </div>
+      <div class="unit-container columnsDOE large-10 small-centered">
+        <div id="aldEQ" class="unit-num large-4 columnsDOE">199028</div>
+        <div class="unit-name large-8 columnsDOE"> 
+          <div class="iconD"><img src="img/deathstar-icon.png"></div>
+          <div class="nameD">Alderaans</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
 </div>    

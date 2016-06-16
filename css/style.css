@@ -147,6 +147,35 @@ Map
             background-color: rgb(51,51,51)
         }
 
+/*Dan's new edits*/
+
+        .unit-container {
+            font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
+            font-size: 30px;
+            line-height: 100%;
+            height: 75px;
+
+        }
+
+        .unit-num {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .nameD {
+            float: left;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .iconD {
+            float: left;
+        }
+
+        .iconD img {
+            width: 50px;
+        }
+
     /*Other*/
 
         .sub-blocks-full {

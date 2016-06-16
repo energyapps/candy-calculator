@@ -17,9 +17,9 @@ var alderaan = 1000000000000000000;
 
 function clickFunction() {
   var energyamount = document.getElementById("energyamount").value; 
+  // $("#energyamount").val(addCommas(parseFloat(energyamount)));
   var unit = document.getElementById("unit").value;
-  console.log(unit)
-  
+
   //convert to joules
   var newjoules = 0;
 
@@ -38,13 +38,65 @@ function clickFunction() {
   var moonEQ = newjoules / moonlanding;
   var aldEQ = newjoules / alderaan;
 
-  //Spit out the answers after this. 
-  console.log(burEQ);
-  console.log(rushEQ);
-  console.log(nyEQ);
-  console.log(moonEQ);
-  console.log(aldEQ);
 
+  //Spit out the answers after this. 
+  $("#burEQ").html(addCommas(burEQ));
+  $("#rushEQ").html(addCommas(rushEQ));
+  $("#nyEQ").html(addCommas(nyEQ));
+  $("#moonEQ").html(addCommas(moonEQ));
+  $("#aldEQ").html(addCommas(aldEQ));
 }  
 
 window.onload= clickFunction();
+
+$( "#energyamount" ).keypress(function() {
+  // var energyamount = document.getElementById("energyamount").value; 
+  clickFunction();
+
+  if (event.keyCode >= 48 && event.keyCode <= 57) 
+    {console.log("input was 0-9");
+  } else if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) {
+    console.log("input was a-z");
+  }   
+});
+
+function addCommas(amount) {
+    // If really small or big, change thing
+    if (amount <= 0.001 || amount >= 1000000000000) {
+      amount = RealSmall(amount)
+      return amount;      
+    } 
+
+    // Round
+    amount = amount.toPrecision(4)
+    amount = Math.round(amount*100) / 100;
+    amount = amount.toString();
+
+    var delimiter = ","; // replace comma if desired
+    var a = amount.split('.',2)
+    var d = a[1];
+    var i = parseInt(a[0]);
+    if(isNaN(i)) { return ''; }
+    var minus = '';
+    if(i < 0) { minus = '-'; }
+    i = Math.abs(i);
+    var n = new String(i);
+    var a = [];
+    while(n.length > 3) {
+      var nn = n.substr(n.length-3);
+      a.unshift(nn);
+      n = n.substr(0,n.length-3);
+    }
+    if(n.length > 0) { a.unshift(n); }
+    n = a.join(delimiter);
+    if(d===undefined) { amount = n; }
+    else { amount = n + '.' + d; }
+    amount = minus + amount;
+    return amount;
+}
+
+function RealSmall(amount) {
+  amount = amount.toExponential();
+  amount = parseFloat(amount).toPrecision(2);
+  return amount
+}
