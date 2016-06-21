@@ -12,8 +12,43 @@ var nyminute = 5372907;
 var moonlanding = 58867933;
 var alderaan = 1000000000000000000;
 
+var comparisons = {
+  "youyear":{
+    "value":100,
+    "unit":"btu"
+  },
+  "dubai":{
+    "value":200,
+    "unit":"btu"
+  },
+  "marty":{
+    "value":300,
+    "unit":"btu"
+  },
+  "earth":{
+    "value":400,
+    "unit":"btu"
+  },
+  "sun":{
+    "value":33000000000000000000000000000000,
+    "unit":"joule"
+  },
+  "universe":{
+    "value":6000,
+    "unit":"btu"
+  }
+};
+
+
 // HTML elements
 
+
+function compareFunction(e) {
+  $("input").val(e.value);
+  $("select").val(e.unit)
+
+  clickFunction();
+}
 
 function clickFunction() {
   var energyamount = document.getElementById("energyamount").value; 
@@ -69,6 +104,12 @@ $( "#energyamount" ).keyup(function() {
 
   // }   
 });
+
+$("span").click(function(){
+  var CompAmount = comparisons[this.id]
+  console.log(comparisons[this.id])
+  compareFunction(CompAmount);
+})
 
 function addCommas(amount) {
     // If really small or big, change thing

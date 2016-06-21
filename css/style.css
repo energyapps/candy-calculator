@@ -211,6 +211,11 @@ Map
             height: 100%;
         }
 
+        .calcu-inner span {
+            font-style: italic;
+            line-height: 90% !important;
+        }
+
         #calcu-small {
             height: 100%;
             margin-left: 20px;
@@ -225,8 +230,17 @@ Map
             line-height: 110%;
         }
 
+        .compare {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .compare:hover {
+            color: blue;
+        }
+
         #equals div {
-            margin-top: 25px;
+            margin-top: 65px;
             margin-bottom: 25px;
             border-top: 3px solid rgb(19,113,163);
             border-bottom: 3px solid rgb(19,113,163);
