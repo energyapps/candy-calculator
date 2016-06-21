@@ -12,8 +12,6 @@ layout: default
       <img src="img/consumption_fallback.jpg">
     </div> -->
            
-
-            <!-- <select id="mySelect"></select> -->
   <div id="master_container" class="m_container">        
 
     <div class="rowDOE">
@@ -24,68 +22,72 @@ layout: default
         <p> This is interesting and <span class="has-tip tip-bottom" data-tooltip title="We define total per capita energy consumption as someone's annual transportation and residential energy needs combined.">important</span> information.</p>
       </div>
     </div>
-    <div class="rowDOE">
-      <div class="large-10 columnsDOE subheadline">
-        <input type="text" id="energyamount" class="lead" value='50000000000000' placeholder="Enter a value"></input>
-      </div> 
-      <div class="large-2 columnsDOE dropdown">
-        <!-- <div data-dropdown="drop">KJ</div> -->
-        <!-- <ul id="drop" class="small f-dropdown close" data-dropdown-content>
-        </ul> --> 
-        Type: <select id="unit">
-            <option value="joule">joule</option>
-            <option value="megajoule">megajoule</option>
-            <option value="kcal">kilocalorie</option>
-            <option value="btu">British Thermal Unit</option>
-            <option value="therm">Therms</option>
-            <option value="kwh">kilowatt hour</option>
-          </select>
-              <button onclick="clickFunction()">Calculate</button>
-
+  <div id="body-stuff" class="rowDOE">
+    <div class="columnsDOE small-12 large-10 small-centered">
+      <div class="rowDOE" id="inputs">
+        <div class="small-9 medium-10 columnsDOE calcu">
+          <div class="calcu-inner">
+            <input type="text" id="energyamount" class="lead" value='1000000' placeholder="Enter a value"></input>
+          </div>
+        </div>      
+        <div class="small-3 medium-2 columnsDOE calcu">
+          <div id="calcu-small" class="subheadline">
+            Energy Type
+            <select id="unit">
+              <option value="megajoule">megajoule</option>
+              <option value="joule">joule</option>            
+              <option value="kcal">kilocalorie</option>
+              <option value="btu">British Thermal Unit</option>
+              <option value="therm">Therms</option>
+              <option value="kwh">kilowatt hour</option>
+            </select>
+          </div>    
+        </div>
       </div>
-    </div>
-    
-
-    <div class="rowDOE">
-      <div class="unit-container columnsDOE large-10 small-centered">
-        <div id="burEQ" class="unit-num large-4 columnsDOE">199028</div>
-        <div class="unit-name large-8 columnsDOE"> 
+      <div class="rowDOE" id="equals">
+        <div class="columnsDOE small-2 medium-1 small-centered">    
+        </div>
+      </div>
+      <div class="rowDOE" id="results">      
+        <div class="unit-container columnsDOE large-4 medium-4 small-12">
           <div class="iconD"><img src="img/burrito-icon.png"></div>
-          <div class="nameD">Burritos</div>
+          <div class="num-name">
+            <div id="burEQ" class="unit-num">199028</div>
+            <div class="nameD">Burritos</div>
+          </div>
         </div>
-      </div>
-      <div class="unit-container columnsDOE large-10 small-centered">
-        <div id="rushEQ" class="unit-num large-4 columnsDOE">199028</div>
-        <div class="unit-name large-8 columnsDOE"> 
+        <div class="unit-container columnsDOE large-4 medium-4 small-12">
           <div class="iconD"><img src="img/rushmore-icon.png"></div>
-          <div class="nameD">Rushmores</div>
+          <div class="num-name">
+            <div id="rushEQ" class="unit-num">199028</div>  
+            <div class="nameD">Rushmores</div>
+          </div>
         </div>
-      </div>
-      <div class="unit-container columnsDOE large-10 small-centered">
-        <div id="nyEQ" class="unit-num large-4 columnsDOE">199028</div>
-        <div class="unit-name large-8 columnsDOE"> 
+        <div class="unit-container columnsDOE large-4 medium-4 small-12">
           <div class="iconD"><img src="img/NY-minute-icon.png"></div>
-          <div class="nameD">New York Minutes</div>
+          <div class="num-name">
+            <div id="nyEQ" class="unit-num">199028</div>  
+            <div class="nameD">NY Minutes</div>
+          </div>
         </div>
-      </div>
-      <div class="unit-container columnsDOE large-10 small-centered">
-        <div id="moonEQ" class="unit-num large-4 columnsDOE">199028</div>
-        <div class="unit-name large-8 columnsDOE"> 
+        <div class="unit-container columnsDOE large-4 medium-4 small-12">
           <div class="iconD"><img src="img/moon-landing-icon.png"></div>
-          <div class="nameD">Moon Landings</div>
+          <div class="num-name">
+            <div id="moonEQ" class="unit-num">199028</div>
+            <div class="nameD">Moon Landings</div>
+          </div>          
         </div>
-      </div>
-      <div class="unit-container columnsDOE large-10 small-centered">
-        <div id="aldEQ" class="unit-num large-4 columnsDOE">199028</div>
-        <div class="unit-name large-8 columnsDOE"> 
+        <div class="unit-container columnsDOE large-4 medium-4 small-12">
           <div class="iconD"><img src="img/deathstar-icon.png"></div>
-          <div class="nameD">Alderaans</div>
+          <div class="num-name">
+            <div id="aldEQ" class="unit-num">199028</div>
+            <div class="nameD">Alderaans</div>
+          </div>          
+        </div>
+        <div class="unit-container columnsDOE large-4 medium-4 small-12" id="unit-last">
+          <h3>Learn More</h3>
         </div>
       </div>
     </div>
-
-
-
-
-
+  </div>
 </div>    

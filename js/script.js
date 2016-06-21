@@ -17,7 +17,6 @@ var alderaan = 1000000000000000000;
 
 function clickFunction() {
   var energyamount = document.getElementById("energyamount").value; 
-  // $("#energyamount").val(addCommas(parseFloat(energyamount)));
   var unit = document.getElementById("unit").value;
 
   //convert to joules
@@ -49,20 +48,31 @@ function clickFunction() {
 
 window.onload= clickFunction();
 
-$( "#energyamount" ).keypress(function() {
+$('select').change(function(){
+  clickFunction();
+});
+
+// track delete
+$( "#energyamount" ).on('keydown', function() {
+    var key = event.keyCode || event.charCode;
+    if( key == 8 || key == 46 )
+      clickFunction();
+});
+
+$( "#energyamount" ).keyup(function() {
   // var energyamount = document.getElementById("energyamount").value; 
   clickFunction();
 
-  if (event.keyCode >= 48 && event.keyCode <= 57) 
-    {console.log("input was 0-9");
-  } else if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) {
-    console.log("input was a-z");
-  }   
+  // if (event.keyCode >= 48 && event.keyCode <= 57) {
+
+  // } else if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) {
+
+  // }   
 });
 
 function addCommas(amount) {
     // If really small or big, change thing
-    if (amount <= 0.001 || amount >= 1000000000000) {
+    if (amount <= 0.001 || amount >= 1000000000) {
       amount = RealSmall(amount)
       return amount;      
     } 

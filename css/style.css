@@ -11,10 +11,6 @@
     display: none;
   }
 
-.f-dropdown li {
-    color: rgb(68,68,68) !important;
-}
-
 /********************************************
 
     Styles to be added to energy.gov in order 
@@ -27,21 +23,6 @@
 /*+++++++++++++++++++++++++++
 Map
 ++++++++++++++++++++++++++++++++++++++*/
-/* #master_container {
-    font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
-    text-transform: none !important;
-    position: relative;
-    width: 100%;
-    height: 800px;
- }*/
-
-        #map { 
-            position:absolute; 
-            top:0; 
-            height: 100%; 
-            width:100%;
-            z-index: -2;
-        }
 
         .rowDOE {
             margin-bottom: 10px;
@@ -53,6 +34,10 @@ Map
 
         .rowDOE .white-text    {
             color: #fff !important;
+        }
+
+        #body-stuff {
+            padding-top: 50px;
         }
 
         /*Typography*/
@@ -134,9 +119,18 @@ Map
         }       
 
         input.lead  {
-            font-size: 100px;
-            font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
+            font-size: 80px;
+            font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;            
+            padding-left: 15px;
+            /*margin-top: 10px;
+            margin-bottom: 10px;*/
+            height: 100%;
         }
+
+        select#unit {
+            margin-top: 10px;
+        }
+
 
     /* The Colors duke, the colors*/
         .header-color {
@@ -153,19 +147,42 @@ Map
             font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
             font-size: 30px;
             line-height: 100%;
-            height: 75px;
-
-        }
+            height: 100px;
+            border: none;
+            border-bottom: 3px solid rgb(202,226,169);            
+        }        
 
         .unit-num {
-            text-align: right;
+            text-align: left;
             margin-top: 10px;
         }
 
+        #unit-last {
+            background-color: rgb(241,247,234);
+        }
+
+        #unit-last:hover {
+            background-color: #c2dca3;
+            transition: background-color 300ms ease-out;
+            cursor: pointer;
+        }
+
+        #unit-last h3 {
+            text-transform: uppercase;
+            color: #000 !important;
+            padding-top: 30px;
+        }
+
+
         .nameD {
+            position: relative;
             float: left;
-            margin-top: 10px;
-            margin-left: 30px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;
+            line-height: 100%;
+            /*margin-top: 10px;
+            margin-left: 30px;*/
         }
 
         .iconD {
@@ -173,157 +190,61 @@ Map
         }
 
         .iconD img {
-            width: 50px;
+            width: 75px;
+            padding-top: 10px;
         }
+
+        .num-name {
+            position: relative;    
+            padding-left: 10px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .calcu {
+            padding: 0 !important;
+            height: 120px;
+        }
+
+        .calcu-inner {
+            background-color: rgb(158,223,237); 
+            height: 100%;
+        }
+
+        #calcu-small {
+            height: 100%;
+            margin-left: 20px;
+            /*margin-left: 0;*/
+            font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 10%;
+            font-size: 20px;
+            line-height: 110%;
+        }
+
+        #equals div {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-top: 3px solid rgb(19,113,163);
+            border-bottom: 3px solid rgb(19,113,163);
+            height: 35px;
+        }
+
+
 
     /*Other*/
 
-        .sub-blocks-full {
-            padding-left: 0px;
-            height: 500px;
-        }
-
         .subheadline {
             background-color: rgb(197,225,159); 
-        }
-
-        .triple {
-            padding-left: 0rem;
-            padding-right: 0rem;
-            padding-bottom: .5rem;
-        }
-
-        .third-blocks {
-            background-color: rgb(197,225,159);
-            height: 240px;
-            position: relative;
-        }
-
-        .third-blocks.top {
-            height: 190px;
-            padding-top: 20px;
-            position: relative;
-        }
-
-        .third-blocks.top div {
-            margin: 0 auto;
-            /*width: 51px;*/
-        }
-        .triple:first-child .third-blocks.top div {
-            margin: 0 auto;
-            /*width: 228px;*/
-        }
-        .triple:last-child .third-blocks.top div {
-            margin: 0 auto;
-            /*width: 112px;*/
-            padding-top: 10px;
-        }
-
-        .third-blocks.top div img{
-            /*width: 100%;*/
-            margin: 0 auto;
-            display: block;
-            height: auto;
-        }
-
-        .unit {
-            position: absolute;
-            bottom: 0px;
-            text-align: center;
-            padding-bottom: 10px;
-            font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
-            color: rgb(68,68,68) !important;
-        }
-
-
-        .middle-block {
-            background-color: rgb(168,212,110) !important;
-            height: 90px;
-            padding-top: 5px;
-        }
-
-        .middle-block p {       
-            border-bottom: none !important;     
-            margin:0px !important;
-            text-align: center;
-            color: rgb(12,15,8) !important;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
         }
 
         .green {
             background-color: rgb(197,225,159); 
         }
 
-        .outside {
-            height: 74px;
-            background-color: rgb(140,198,63);
-            transition: background-color 300ms ease-out;
-        }
-
-        .outside:hover {
-            cursor: pointer;
-            background-color: #fff;
-            background-color: rgb(197,225,159);
-            transition: background-color 300ms ease-out;
-        }
-
-
-        .full-size-blocks {
-            /*border: 1px solid rgb(151,203,81);*/
-            overflow: hidden;
-        }       
-
-        .dropdown {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-        /*
-        .button1:hover {
-            cursor: pointer;
-            background-color: rgb(197,225,159);  
-        }
-
-        .button1 h1:hover {
-            text-decoration: none !important;
-        }*/
-        .button1 {
-            width: 100%;
-            border-style: solid;
-            border-width: 0px;
-            cursor: pointer;
-            line-height: normal;
-            /*margin: 0 0 1.25rem;*/
-            position: relative;
-            text-decoration: none !important;
-            text-align: center;
-            -webkit-appearance: none;
-            -webkit-border-radius: 0;
-            display: inline-block;
-            /*padding-top: 1rem;
-            padding-right: 2rem;
-            padding-bottom: 1.0625rem;
-            padding-left: 2rem;*/            
-            background-color: #008cba;
-            border-color: #007095;
-            transition: background-color 300ms ease-out;
-            /*Turn off highlight*/
-            /*-webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;*/
-        }
-
-        .button1 h2 {
-            text-transform: uppercase !important;
-            /*color: rgb(51,51,51)*/
-
-        }
 
         .inner-text p {
         margin-bottom: 10px !important; 
@@ -413,28 +334,19 @@ Map
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
-
-        .triple {
-            padding-left: 0.1rem;
-            padding-right: 0.1rem;
-            padding-bottom: 0rem;
+        .unit-container {border: none}
+        .unit-container:nth-child(1), .unit-container:nth-child(2), 
+        .unit-container:nth-child(4),.unit-container:nth-child(5) {
+            border-right: 3px solid rgb(202,226,169);            
         }
 
-        .triple:first-child {
-            padding-left: 0px;   
-            padding-right: 0.56rem;         
+        .unit-container:nth-child(1), .unit-container:nth-child(2),.unit-container:nth-child(3) {
+            border-bottom: 3px solid rgb(202,226,169);
         }
 
-        .triple:last-child {
-            padding-right: 0px;         
-            padding-left: 0.56rem;
-        }
     } /* min-width 641px, medium screens */
 @media only screen and (min-width: 64.063em) { 
-        .dropdown {
-            padding-left: 0.9375rem;
-            padding-right: 0.9375rem;
-        }
+
     } /* min-width 1025px, large screens */
 
 
