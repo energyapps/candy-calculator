@@ -13,8 +13,12 @@ var moonlanding = 58867933;
 var alderaan = 1000000000000000000;
 
 var comparisons = {
+  "meteor":{
+    "value":500000,
+    "unit":"joule"
+  },
   "youyear":{
-    "value":100,
+    "value":313000000,
     "unit":"btu"
   },
   "dubai":{
@@ -22,20 +26,25 @@ var comparisons = {
     "unit":"btu"
   },
   "marty":{
-    "value":300,
-    "unit":"btu"
+    "value":1150000,
+    "unit":"btu",
+    "source":"http://energy.gov/maps/how-much-do-you-consume-0"
   },
   "earth":{
-    "value":400,
-    "unit":"btu"
+    "value":'524.0E+15',
+    // "value":'3.89E+20',
+    "unit":"btu",
+    "source":"https://www.eia.gov/cfapps/ipdbproject/IEDIndex3.cfm?tid=44&pid=44&aid=2"
   },
   "sun":{
-    "value":33000000000000000000000000000000,
-    "unit":"joule"
+    "value":'1.5E+22',
+    "unit":"joule",
+    "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   },
   "universe":{
-    "value":6000,
-    "unit":"btu"
+    "value":'4E+58',
+    "unit":"joule",
+    "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   }
 };
 
