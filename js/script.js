@@ -53,13 +53,16 @@ var comparisons = {
 
 
 function compareFunction(e) {
+  
+
   $("input").val(e.value);
   $("select").val(e.unit)
 
   clickFunction();
 }
 
-function clickFunction() {
+function clickFunction() {  
+
   var energyamount = document.getElementById("energyamount").value; 
   var unit = document.getElementById("unit").value;
 
@@ -104,7 +107,7 @@ $( "#energyamount" ).on('keydown', function() {
 });
 
 $( "#energyamount" ).keyup(function() {
-  // var energyamount = document.getElementById("energyamount").value; 
+  $("span").removeClass('clicked');  
   clickFunction();
 
   // if (event.keyCode >= 48 && event.keyCode <= 57) {
@@ -116,6 +119,10 @@ $( "#energyamount" ).keyup(function() {
 
 $("span").click(function(){
   var CompAmount = comparisons[this.id]  
+
+  $("span").removeClass('clicked');
+  $(this).addClass('clicked');
+
   compareFunction(CompAmount);
 })
 

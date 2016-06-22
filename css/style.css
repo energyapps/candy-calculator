@@ -236,8 +236,12 @@ Map
             cursor: pointer;
         }
 
+        .compare.clicked {            
+            color: #008cba;
+        }
+
         .compare:hover {
-            color: blue;
+            color: #008cba;
         }
 
         #equals div {
