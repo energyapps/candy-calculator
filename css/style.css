@@ -181,7 +181,7 @@ Map
             font-size: 16px;
             font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;
             line-height: 100%;
-            border-bottom: 1px dotted black;
+            border-bottom: 1px dotted #008cba;
             /*margin-top: 10px;
             margin-left: 30px;*/
         }

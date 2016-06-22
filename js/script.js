@@ -42,7 +42,7 @@ var comparisons = {
     "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   },
   "universe":{
-    "value":'4E+30',
+    "value":'4E+58',
     "unit":"joule",
     "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   }
