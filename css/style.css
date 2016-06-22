@@ -181,6 +181,7 @@ Map
             font-size: 16px;
             font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;
             line-height: 100%;
+            border-bottom: 1px dotted black;
             /*margin-top: 10px;
             margin-left: 30px;*/
         }
@@ -403,10 +404,4 @@ Map
             padding-bottom: 0.25rem;
             letter-spacing: .025rem;
         }
-}
-
-
-
-.has-tip {
-    border-bottom: dotted 1px #fff;
 }

@@ -42,7 +42,7 @@ var comparisons = {
     "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   },
   "universe":{
-    "value":'4E+58',
+    "value":'4E+30',
     "unit":"joule",
     "source":"https://en.wikipedia.org/wiki/Orders_of_magnitude_(energy)"
   }
@@ -115,8 +115,7 @@ $( "#energyamount" ).keyup(function() {
 });
 
 $("span").click(function(){
-  var CompAmount = comparisons[this.id]
-  console.log(comparisons[this.id])
+  var CompAmount = comparisons[this.id]  
   compareFunction(CompAmount);
 })
 
