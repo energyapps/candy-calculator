@@ -3,14 +3,6 @@ layout: default
 ---
 
 <!-- Fallback info -->
-<!--     <div class="rowDOE fallback">
-      <div class="large-12 columnsDOE" style="background-color: #fbedc2; height:40px; padding-top:11px;">
-        <center>Want to view this interactive graphic in all its glory? Upgrade to a modern browser!</center>
-      </div>
-    </div>
-    <div class="fallback">
-      <img src="img/consumption_fallback.jpg">
-    </div> -->
            
   <div id="master_container" class="m_container">        
 
@@ -25,22 +17,12 @@ layout: default
   <div id="body-stuff" class="rowDOE">
     <div class="columnsDOE small-12 large-10 small-centered">
       <div class="rowDOE" id="inputs">
-        <div class="small-9 medium-10 columnsDOE calcu">
+        <div class="small-12 medium-10 columnsDOE calcu small-centered medium-uncentered">
           <div class="calcu-inner">
             <input type="text" id="energyamount" class="lead" value='1000000' placeholder="Enter a value"></input>            
-          </div>
-          <div class="calcu-outer">
-            Try these: 
-              <span class="compare" id="meteor">Kinetic Energy of a 1 gram meteor hitting the earth</span>,
-              <span class="compare" id="marty">a trip back to the future</span>,
-              <span class="compare" id="youyear">your yearly energy consumption</span>,
-              <!-- <span class="compare" id="dubai">a 747 from NYC to Dubai</span>,               -->
-              <span class="compare" id="earth">human energy use each year</span>, 
-              <span class="compare" id="sun">the solar energy that hits the earth each day</span>, 
-              <span class="compare" id="universe">the visible mass-energy of the Milky Way</span>
-          </div>
+          </div>          
         </div>      
-        <div class="small-3 medium-2 columnsDOE calcu">
+        <div class="small-12 medium-2 columnsDOE calcu small-centered medium-uncentered">
           <div id="calcu-small" class="subheadline">
             Energy Type
             <select id="unit">
@@ -53,6 +35,18 @@ layout: default
             </select>
           </div>    
         </div>
+      </div>
+      <div class="rowDOE">
+        <div class="calcu-outer columnsDOE small-12 medium-10" style="padding-left:0px;">
+            Try these: 
+              <span class="compare" id="meteor">Kinetic Energy of a 1 gram meteor hitting the earth</span>,
+              <span class="compare" id="marty">a trip back to the future</span>,
+              <span class="compare" id="youyear">your yearly energy consumption</span>,
+              <!-- <span class="compare" id="dubai">a 747 from NYC to Dubai</span>,               -->
+              <span class="compare" id="earth">human energy use each year</span>, 
+              <span class="compare" id="sun">the solar energy that hits the earth each day</span>, 
+              <span class="compare" id="universe">the visible mass-energy of the Milky Way</span>
+          </div>
       </div>
       <div class="rowDOE" id="equals">
         <div class="columnsDOE small-2 medium-1 small-centered">    
