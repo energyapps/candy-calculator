@@ -1,3 +1,5 @@
+var pymChild = new pym.Child();
+
 // equivalents
 var jpMJ = 1000000;
 var kcalpMJ  = 238.834488;
