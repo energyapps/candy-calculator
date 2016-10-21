@@ -8,11 +8,11 @@ var ThermpMJ = 0.009477719;
 var kWhpMJ = 0.27776451;
 
 // DC units in megajoules
-var burrito =  5.0244;
-var rushmore = 54422;
-var nyminute = 5372907;
-var moonlanding = 58867933;
-var alderaan = 1000000000000000000;
+var burrito =   0.03;
+var rushmore =  4.32; 
+var nyminute =  49.58;
+var moonlanding =  4000.00;
+var alderaan =  5133265920.00;
 
 var comparisons = {
   "meteor":{
